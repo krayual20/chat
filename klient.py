@@ -7,6 +7,7 @@ port = 2205
 s.connect((host, port))
 msg = s.recv(1024)
 print(msg.decode('ascii'))
+s.send(b"aaa")
 s.close()
 
 import tkinter as tk
